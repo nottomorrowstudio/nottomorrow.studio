@@ -41,12 +41,28 @@
 
 
 
-  .footer {
+   .footer {
+    padding: 0.9rem 1.2rem;
+    font-size: 0.85rem;
 
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    font-size: 1rem;
+    gap: 1rem; /* prevents text collapse */
+  }
 
+  .footer-column {
+    width: auto;
+    flex: 1;
+  }
+
+  .footer-column:first-child {
+    text-align: left;
+  }
+
+  .footer-column:last-child {
+    text-align: right;
   }
 
 }
